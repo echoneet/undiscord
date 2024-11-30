@@ -277,6 +277,7 @@ async function startAction() {
   const hasFile = $('input#hasFile').checked;
   const includePinned = $('input#includePinned').checked;
   const pattern = $('input#pattern').value;
+  const includeApplications = $('input#includeApplications').checked;
   // message interval
   const minId = $('input#minId').value.trim();
   const maxId = $('input#maxId').value.trim();
@@ -310,6 +311,7 @@ async function startAction() {
     content,
     hasLink,
     hasFile,
+    includeApplications,
     includeNsfw,
     includeServers,
     includePinned,
